@@ -5,21 +5,21 @@
 class Testchart < Formula
   desc "Helm chart unit testing CLI tool"
   homepage "https://github.com/silphid/tap"
-  version "0.0.15"
+  version "0.0.16"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/silphid/testchart/releases/download/v0.0.15/testchart_0.0.15_darwin_amd64.tar.gz"
-      sha256 "55a8ea99654c9a3e5c6ad2002d655e52f98827b310e1cc055242bb6849121088"
+      url "https://github.com/silphid/testchart/releases/download/v0.0.16/testchart_0.0.16_darwin_amd64.tar.gz"
+      sha256 "85e3ccbabe48e584bb5aa87ca5c6ad3de43701236ee39f8a87538b2361e823f4"
 
       def install
         bin.install "testchart"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/silphid/testchart/releases/download/v0.0.15/testchart_0.0.15_darwin_arm64.tar.gz"
-      sha256 "edb296e1771068a4911918c2b4f94da8d3e0be825c86bc0f9043b6a0d6687d87"
+      url "https://github.com/silphid/testchart/releases/download/v0.0.16/testchart_0.0.16_darwin_arm64.tar.gz"
+      sha256 "fe71ba40604f1ceed3ca048c5f373d7e00283e4acb2e61216d64949c52190091"
 
       def install
         bin.install "testchart"
@@ -28,17 +28,17 @@ class Testchart < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silphid/testchart/releases/download/v0.0.15/testchart_0.0.15_linux_arm64.tar.gz"
-      sha256 "59d1bbedc73bc2f933d66aa8eda114cf09ba491395cae0eb5d22816162cf8d1e"
+    if Hardware::CPU.intel?
+      url "https://github.com/silphid/testchart/releases/download/v0.0.16/testchart_0.0.16_linux_amd64.tar.gz"
+      sha256 "38d5fc6889b73923023034fcc1a99771e8d1e0eca199167509e4857094d1904e"
 
       def install
         bin.install "testchart"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/silphid/testchart/releases/download/v0.0.15/testchart_0.0.15_linux_amd64.tar.gz"
-      sha256 "c7eb7bad0d1ee514c85f2a43e65f1f31519b047629010811585daeeae6804739"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/silphid/testchart/releases/download/v0.0.16/testchart_0.0.16_linux_arm64.tar.gz"
+      sha256 "1bd7cbd0dfe6126f6bd6aa7ce32537553ba6b7106df6d7096760c4d329578a96"
 
       def install
         bin.install "testchart"
