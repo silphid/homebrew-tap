@@ -5,21 +5,21 @@
 class Testchart < Formula
   desc "Helm chart unit testing CLI tool"
   homepage "https://github.com/silphid/testchart"
-  version "0.0.38"
+  version "0.0.39"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/silphid/testchart/releases/download/v0.0.38/testchart_0.0.38_darwin_amd64.tar.gz"
-      sha256 "adc56d56da48861aa28a84da942deb525deb225a9fa52fdf265a2a827caa8a9d"
+      url "https://github.com/silphid/testchart/releases/download/v0.0.39/testchart_0.0.39_darwin_amd64.tar.gz"
+      sha256 "c230665200cc2d6876786eb81b4ccb500d1f11236c15334a734b56884f37b05e"
 
       def install
         bin.install "testchart"
       end
     end
     on_arm do
-      url "https://github.com/silphid/testchart/releases/download/v0.0.38/testchart_0.0.38_darwin_arm64.tar.gz"
-      sha256 "6ca937e1c81c2de1b20b7ff3e09ccd83037f3227336d09dc06e765d3d9cb3b7f"
+      url "https://github.com/silphid/testchart/releases/download/v0.0.39/testchart_0.0.39_darwin_arm64.tar.gz"
+      sha256 "04a03901b4a017f801976eba4957ec1e1ffb626136506e37bc77a69efabb6315"
 
       def install
         bin.install "testchart"
@@ -30,8 +30,8 @@ class Testchart < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/silphid/testchart/releases/download/v0.0.38/testchart_0.0.38_linux_amd64.tar.gz"
-        sha256 "5ee7e83579ebd556025303ee6b04d1aa05b1513e8e9c7c6df02d8cf020479a33"
+        url "https://github.com/silphid/testchart/releases/download/v0.0.39/testchart_0.0.39_linux_amd64.tar.gz"
+        sha256 "4c05c9ebeeb70e021c2ff086321e245044d113bd7a92299330d6efc4d1b46b89"
 
         def install
           bin.install "testchart"
@@ -40,8 +40,8 @@ class Testchart < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/silphid/testchart/releases/download/v0.0.38/testchart_0.0.38_linux_arm64.tar.gz"
-        sha256 "71fd97381574229e467f8f02127249d929c38ff141cdbd7b35da85e285ef8d52"
+        url "https://github.com/silphid/testchart/releases/download/v0.0.39/testchart_0.0.39_linux_arm64.tar.gz"
+        sha256 "fafd735730ba2a18d536a9116a177d52c7d8a9bf7772e1f76a8384b9a9881743"
 
         def install
           bin.install "testchart"
