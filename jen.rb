@@ -5,21 +5,21 @@
 class Jen < Formula
   desc "Jen is a CLI tool for scaffolding new microservices based on Go templates, onboarding them with your CI/CD and infra, and augmenting them with your DevOps scripts for their entire life-time."
   homepage "https://github.com/silphid/jen"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/silphid/jen/releases/download/v0.6.0/jen_0.6.0_darwin_amd64.tar.gz"
-      sha256 "1a9b59edf41e8b12a4a4f6f2e7e3097bb4c358a9f7315f5b64511658c7ed18c5"
+      url "https://github.com/silphid/jen/releases/download/v0.7.0/jen_0.7.0_darwin_amd64.tar.gz"
+      sha256 "a7385227fbcf6b3d24b34b3496e2b23684f6a038cfad05cce201133cb2dfef33"
 
       define_method(:install) do
         bin.install "jen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/silphid/jen/releases/download/v0.6.0/jen_0.6.0_darwin_arm64.tar.gz"
-      sha256 "89a8a16c532157a1685d4ca9babcf246cbb7c7ac40e99520a867d6cb7cc1fbc1"
+      url "https://github.com/silphid/jen/releases/download/v0.7.0/jen_0.7.0_darwin_arm64.tar.gz"
+      sha256 "43f7a841d7323038ed0ae68be9b640e46213661bec314c3846097fa78b3082ce"
 
       define_method(:install) do
         bin.install "jen"
@@ -29,15 +29,15 @@ class Jen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silphid/jen/releases/download/v0.6.0/jen_0.6.0_linux_amd64.tar.gz"
-      sha256 "b6325ff1cc19e65bfb7592f01304b1b7f61049449a8e66f95515508ac12847b2"
+      url "https://github.com/silphid/jen/releases/download/v0.7.0/jen_0.7.0_linux_amd64.tar.gz"
+      sha256 "2189a8c29b499ee6f60c7a1e45a9404fdbdef87c2fed950f5fe965947ccc1bcb"
       define_method(:install) do
         bin.install "jen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silphid/jen/releases/download/v0.6.0/jen_0.6.0_linux_arm64.tar.gz"
-      sha256 "d93b95efab44b8965a7b98e03fbf646e3bc7f5e1c37ab2ede4af86caf0587d32"
+      url "https://github.com/silphid/jen/releases/download/v0.7.0/jen_0.7.0_linux_arm64.tar.gz"
+      sha256 "88af69c8fdf120e308d0ccda9f96dc14b83de4a734b18bd7ba32d760ec43bd22"
       define_method(:install) do
         bin.install "jen"
       end
